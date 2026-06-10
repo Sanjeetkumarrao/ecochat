@@ -1,4 +1,4 @@
-# EchoChat 💬
+# EchoChat 
 
 A full-stack real-time chat application built with the MERN stack + Socket.io.
 
@@ -11,17 +11,17 @@ A full-stack real-time chat application built with the MERN stack + Socket.io.
 
 ## Features
 
-- 🔐 JWT Auth with access + refresh token system
-- 💬 One-to-one private messaging (DM)
-- 👥 Group chat rooms
-- 🟢 Online / Offline status indicator
-- ✅ Message read receipts (single & double tick)
-- ⌨️ Typing indicators
-- 📎 File & image sharing via Cloudinary
-- 🔔 In-app notifications
-- 🔍 User search
-- 📜 Chat history with pagination
-- ⚙️ Profile settings
+- JWT Auth with access + refresh token system
+- One-to-one private messaging (DM)
+- Group chat rooms
+- Online / Offline status indicator
+- Message read receipts (single & double tick)
+- Typing indicators
+- File & image sharing via Cloudinary
+- In-app notifications
+- User search
+- Chat history with pagination
+- Profile settings
 
 ---
 
@@ -55,30 +55,10 @@ ecochat/
     └── package.json
 ```
 
----
-
-## Setup Instructions
-
-### 1. Install dependencies
-
-```bash
-# Backend
-cd backend
-npm install
-
-# Frontend
-cd ../frontend
-npm install
-```
-
 ### 2. Configure environment variables
 
-**Backend** — copy `.env.example` to `.env`:
-
-```env
 PORT=8000
 MONGODB_URI=mongodb+srv://<user>:<pass>@cluster.mongodb.net/ecochat
-CORS_ORIGIN=http://localhost:5173
 
 ACCESS_TOKEN_SECRET=your_secret_here
 ACCESS_TOKEN_EXPIRY=1d
@@ -88,24 +68,15 @@ REFRESH_TOKEN_EXPIRY=10d
 CLOUDINARY_CLOUD_NAME=your_cloud_name
 CLOUDINARY_API_KEY=your_api_key
 CLOUDINARY_API_SECRET=your_api_secret
-```
 
 ### 3. Run the app
 
 ```bash
-# Backend (from /backend folder)
 npm run dev
 
-# Frontend (from /frontend folder, new terminal)
+# Frontend 
 npm run dev
 ```
-
-- Frontend → http://localhost:5173
-- Backend → http://localhost:8000
-
----
-
-## API Endpoints
 
 | Resource      | Endpoint               |
 |---------------|------------------------|
