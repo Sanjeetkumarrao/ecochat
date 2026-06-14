@@ -57,8 +57,8 @@ export default function Register() {
             </div>
 
             {[
-              { name: "fullName", label: "Full Name", placeholder: "John Doe" },
-              { name: "username", label: "Username", placeholder: "johndoe" },
+              { name: "fullName", label: "Full Name", placeholder: "name" },
+              { name: "username", label: "Username", placeholder: "username" },
               { name: "email", label: "Email", placeholder: "you@example.com", type: "email" },
               { name: "password", label: "Password", placeholder: "••••••••", type: "password" },
             ].map(({ name, label, placeholder, type = "text" }) => (
